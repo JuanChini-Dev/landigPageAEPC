@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Agro Escuela</title>
+    <title>Etrain</title>
     <link rel="icon" href="img/favicon.png" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -29,18 +29,16 @@
 
   <body>
     <!--::header part start::-->
-    <header class="main_menu home_menu">
+    <header class="main_menu single_page_menu">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-12">
             <nav class="navbar navbar-expand-lg navbar-light">
-              <a class="navbar-brand" href="index.html">
-                <img
-                  src="img/logo.png"
-                  alt="logo"
-                  width="250px"
-                  height="47px"
-                />
+              <a class="navbar-brand logo_1" href="index.html">
+                <img src="img/single_page_logo.png" alt="logo" />
+              </a>
+              <a class="navbar-brand logo_2" href="index.html">
+                <img src="img/logo.png" alt="logo" />
               </a>
               <button
                 class="navbar-toggler"
@@ -60,20 +58,41 @@
               >
                 <ul class="navbar-nav align-items-center">
                   <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="about.html">Nosotros</a>
+                    <a class="nav-link" href="about.html">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="cource.html">Formacion</a>
+                    <a class="nav-link" href="cource.html">Courses</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">Aula Virtual</a>
+                    <a class="nav-link" href="blog.html">Blog</a>
                   </li>
-
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="blog.html"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Pages
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="single-blog.html">
+                        Single blog
+                      </a>
+                      <a class="dropdown-item" href="elements.html">Elements</a>
+                    </div>
+                  </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contacto</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="d-none d-lg-block">
+                    <a class="btn_1" href="#">Get a Quote</a>
                   </li>
                 </ul>
               </div>
@@ -84,32 +103,29 @@
     </header>
     <!-- Header part end-->
 
-    <!-- banner part start-->
-    <section class="banner_part">
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-xl-6">
-            <div class="banner_text">
-              <div class="banner_text_iner">
-                <h5>Every child yearns to learn</h5>
-                <h1>Making Your Childs World Better</h1>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumb_iner text-center">
+              <div class="breadcrumb_iner_item">
+                <h2>About Us</h2>
                 <p>
-                  Replenish seasons may male hath fruit beast were seas saw you
-                  arrie said man beast whales his void unto last session for
-                  bite. Set have great you'll male grass yielding yielding man
+                  Home
+                  <span>/</span>
+                  About Us
                 </p>
-                <a href="#" class="btn_1">Nuestros Cursos</a>
-                <!-- <a href="#" class="btn_2">Get Started</a> -->
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- banner part start-->
+    <!-- breadcrumb start-->
 
     <!-- feature_part start-->
-    <section class="feature_part">
+    <section class="feature_part single_feature_padding">
       <div class="container">
         <div class="row">
           <div class="col-sm-6 col-xl-3 align-self-center">
@@ -132,7 +148,7 @@
                 <span class="single_feature_icon">
                   <i class="ti-layers"></i>
                 </span>
-                <h4>Perito Clasificador de Cereales</h4>
+                <h4>Better Future</h4>
                 <p>
                   Set have great you male grasses yielding yielding first their
                   to called deep abundantly Set have great you male
@@ -146,9 +162,7 @@
                 <span class="single_feature_icon">
                   <i class="ti-new-window"></i>
                 </span>
-                <h4>
-                  Tecnico Superior en Calidad y Comercializacion de Granos
-                </h4>
+                <h4>Qualified Trainers</h4>
                 <p>
                   Set have great you male grasses yielding yielding first their
                   to called deep abundantly Set have great you male
@@ -162,7 +176,7 @@
                 <span class="single_service_icon style_icon">
                   <i class="ti-light-bulb"></i>
                 </span>
-                <h4>Capacitaciones inCompany</h4>
+                <h4>Job Oppurtunity</h4>
                 <p>
                   Set have great you male grasses yielding yielding first their
                   to called deep abundantly Set have great you male
@@ -186,7 +200,7 @@
           </div>
           <div class="col-md-5 col-lg-5">
             <div class="learning_member_text">
-              <h5>Nosotros</h5>
+              <h5>About us</h5>
               <h2>Learning with Love and Laughter</h2>
               <p>
                 Fifth saying upon divide divide rule for deep their female all
@@ -215,16 +229,28 @@
     <section class="member_counter">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-sm-6">
+          <div class="col-lg-3 col-sm-6">
             <div class="single_member_counter">
-              <span class="counter">3650</span>
-              <h4>Total de Estudiantes</h4>
+              <span class="counter">1024</span>
+              <h4>All Teachers</h4>
             </div>
           </div>
-          <div class="col-lg-6 col-sm-6">
+          <div class="col-lg-3 col-sm-6">
             <div class="single_member_counter">
-              <span class="counter">2900</span>
-              <h4>Estudiantes Recibidos</h4>
+              <span class="counter">960</span>
+              <h4>All Students</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single_member_counter">
+              <span class="counter">1020</span>
+              <h4>Online Students</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single_member_counter">
+              <span class="counter">820</span>
+              <h4>Ofline Students</h4>
             </div>
           </div>
         </div>
@@ -233,124 +259,7 @@
     <!-- member_counter counter end -->
 
     <!--::review_part start::-->
-    <section class="special_cource padding_top">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-5">
-            <div class="section_tittle text-center">
-              <!-- <p>popular courses</p> -->
-              <h2>Cursos y carreras</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-lg-4">
-            <div class="single_special_cource">
-              <img src="img/special_cource_1.png" class="special_img" alt="" />
-              <div class="special_cource_text">
-                <a href="course-details.html" class="btn_4">Presencial</a>
-                <h4>Inicio: 10/03/22</h4>
-                <a href="course-details.html">
-                  <h3>Perito Clasificador de Cereales</h3>
-                </a>
-                <p>
-                  Which whose darkness saying were life unto fish wherein all
-                  fish of together called
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-lg-4">
-            <div class="single_special_cource">
-              <img src="img/special_cource_2.png" class="special_img" alt="" />
-              <div class="special_cource_text">
-                <a href="course-details.html" class="btn_4">Distancia</a>
-                <h4>Inicio: 10/05/22</h4>
-                <a href="course-details.html">
-                  <h3>Perito Clasificador de Cereales</h3>
-                </a>
-                <p>
-                  Which whose darkness saying were life unto fish wherein all
-                  fish of together called
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="single_special_cource">
-              <img src="img/special_cource_3.png" class="special_img" alt="" />
-              <div class="special_cource_text">
-                <a href="course-details.html" class="btn_4">Distancia</a>
-                <h4>Inicio: 10/03/22</h4>
-
-                <a href="course-details.html">
-                  <h3>
-                    Tecnicatura Superior en Calidad y Comercializacion de Granos
-                  </h3>
-                </a>
-                <p>
-                  Which whose darkness saying were life unto fish wherein all
-                  fish of together called
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--::blog_part end::-->
-
-    <!-- learning part start-->
-    <section class="advance_feature learning_part">
-      <div class="container">
-        <div class="row align-items-sm-center align-items-xl-stretch">
-          <div class="col-md-6 col-lg-6">
-            <div class="learning_member_text">
-              <h5>Advance feature</h5>
-              <h2>Our Advance Educator Learning System</h2>
-              <p>
-                Fifth saying upon divide divide rule for deep their female all
-                hath brind mid Days and beast greater grass signs abundantly
-                have greater also use over face earth days years under brought
-                moveth she star
-              </p>
-              <div class="row">
-                <div class="col-sm-6 col-md-12 col-lg-6">
-                  <div class="learning_member_text_iner">
-                    <span class="ti-pencil-alt"></span>
-                    <h4>Learn Anywhere</h4>
-                    <p>
-                      There earth face earth behold she star so made void two
-                      given and also our
-                    </p>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-12 col-lg-6">
-                  <div class="learning_member_text_iner">
-                    <span class="ti-stamp"></span>
-                    <h4>Expert Teacher</h4>
-                    <p>
-                      There earth face earth behold she star so made void two
-                      given and also our
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6">
-            <div class="learning_img">
-              <img src="img/advance_feature_img.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- learning part end-->
-
-    <!--::review_part start::-->
-    <section class="testimonial_part mb-3">
+    <section class="testimonial_part section_padding">
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-xl-5">
@@ -414,7 +323,7 @@
                   </div>
                   <div class="col-lg-4 col-xl-2 col-sm-4">
                     <div class="testimonial_slider_img">
-                      <img src="img/testimonial_img_2.png" alt="#" />
+                      <img src="img/testimonial_img_1.png" alt="#" />
                     </div>
                   </div>
                   <div class="col-xl-4 d-none d-xl-block">
@@ -450,7 +359,7 @@
                   </div>
                   <div class="col-lg-4 col-xl-2 col-sm-4">
                     <div class="testimonial_slider_img">
-                      <img src="img/testimonial_img_3.png" alt="#" />
+                      <img src="img/testimonial_img_1.png" alt="#" />
                     </div>
                   </div>
                   <div class="col-xl-4 d-none d-xl-block">
@@ -484,9 +393,7 @@
         <div class="row justify-content-between">
           <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="single-footer-widget footer_1">
-              <a href="index.html">
-                <img src="img/logo.png" alt="" width="250px" height="47px" />
-              </a>
+              <a href="index.html"><img src="img/logo.png" alt="" /></a>
               <p>
                 But when shot real her. Chamber her one visite removal six
                 sending himself boys scot exquisite existend an
@@ -529,19 +436,19 @@
           </div>
           <div class="col-xl-3 col-sm-6 col-md-4">
             <div class="single-footer-widget footer_2">
-              <h4>Contactanos</h4>
+              <h4>Contact us</h4>
               <div class="contact_info">
                 <p>
-                  <span>Direccion :</span>
-                  Rosario de Santa Fe 231 - Piso 11 - OF A - Cordoba - Argentina
+                  <span>Address :</span>
+                  Hath of it fly signs bear be one blessed after
                 </p>
                 <p>
                   <span>Phone :</span>
-                  +54 9 351874-9865
+                  +2 36 265 (8060)
                 </p>
                 <p>
                   <span>Email :</span>
-                  info@agroescuela-cordoba.edu.ar
+                  info@colorlib.com
                 </p>
               </div>
             </div>
