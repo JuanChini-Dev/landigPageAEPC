@@ -2730,7 +2730,7 @@ ul {
 /* line 164, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
 .banner_part:after {
   position: absolute;
-  top: 163px;
+  top: 15%;
   width: 41%;
   height: 69%;
   content: "";
@@ -2743,7 +2743,7 @@ ul {
   /* line 164, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
   .banner_part:after {
     position: absolute;
-    top: 150px;
+    top: 25%;
     max-width: 100%;
     max-height: 100%;
     content: "";
@@ -2761,7 +2761,7 @@ ul {
   /* line 164, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
   .banner_part:after {
     position: absolute;
-    top: 110px;
+    top: 25%;
     max-width: 100%;
     max-height: 100%;
     content: "";
@@ -2779,7 +2779,7 @@ ul {
   /* line 164, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
   .banner_part:after {
     position: absolute;
-    top: 110px;
+    top: 25%;
     max-width: 100%;
     max-height: 100%;
     content: "";
@@ -7326,6 +7326,49 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   text-align: center;
   margin-top: 0.25rem;
+}
+
+
+#faq .card .card-header {
+  border: 0;
+  -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+          box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+  border-radius: 2px;
+  padding: 0;
+}
+
+ #faq .card .card-header .btn-header-link {
+  display: block;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+
+}
+
+#faq .card .card-header .btn-header-link:after {
+  content: "\f107";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  float: right;
+}
+
+#faq .card .card-header .btn-header-link.collapsed:after {
+  content: "\f106";
+}
+
+#faq .card .collapsing {
+  
+  line-height: 30px;
+}
+
+#faq .card .collapse {
+  border: 0;
+}
+
+#faq .card .collapse.show {
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
 
 
