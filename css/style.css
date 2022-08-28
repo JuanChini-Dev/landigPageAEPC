@@ -5881,45 +5881,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /*# sourceMappingURL=style.css.map */
 
-/* what app button scroll */
-#myBtn {
-	position: fixed; 
-  z-index: 99; 
-	bottom: 60px; 
-	right: 40px; 
-	display: none; 
-	width: 70px;
-	height: 70px;
-	border: none; 
-	border-radius: 50%; 
-	outline: none; 
-	cursor: pointer; 
-	background-color: transparent;
-	margin-bottom: 0.25rem;
-  transition: transform .2s; /* Animation */
-
-
-}
-
-#myBtn:hover {
-	width: 80px;
-	height: 80px;
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-#myBtn img {
-	margin-bottom: 0.25rem;
-	width: 52px;
-	height: 52px;
-
-}
-
-#myBtn p {
-  font-size: 12px;
-  text-align: center;
-  margin-top: 0.25rem;
-}
-
 
 #faq .card .card-header {
   border: 0;
@@ -5967,5 +5928,43 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #ff663b !important;
 }
 
+/******* scroll top button *******/
+#whatsapp_button {
+  position: fixed;
+  z-index: 999;
+  bottom: 3vh;
+  right: calc(2.25rem + 1vw);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight:bold ;
+  background-color: transparent;
+  color: var(--second-color);
+  cursor:pointer;
+  outline: 0;
+  border: 0; 
+  opacity: 0.5;
+}
 
+#whatsapp_button:hover {
+  opacity: 1;
+  transition: all 0.3s ease-out;
+  transform: scale3d(1.5, 1.5, 1);
+
+}
+
+.hidden {
+  visibility : hidden;
+  opacity: 0;
+}
+
+@media (max-width: 576px) {
+  #whatsapp_button {
+    right: calc(1.25rem + 1vw);
+    width: 3rem;
+    height: 3rem;
+
+  }
+}
 

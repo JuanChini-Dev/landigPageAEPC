@@ -85,10 +85,7 @@ $(document).ready(function () {
     } else {
       $('.main_menu').removeClass('menu_fixed animated fadeInDown')
     }
-    scrollFunctionBTT()
   })
-
-  //   $(document).ready(function(){
 
   //     var owl_1 = $('#owl-1');
   //     var owl_2 = $('#owl-2');
@@ -177,8 +174,6 @@ $(document).ready(function () {
       .addClass('slick-active')
   })
 
-  //UPDATED
-
   $('.slider').on('afterChange', function (event, slick, currentSlide) {
     $('.content').hide()
     $('.content[data-id=' + (currentSlide + 1) + ']').show()
@@ -192,13 +187,13 @@ $(document).ready(function () {
   })
 })(jQuery)
 
-myButton = document.getElementById('myBtn')
+// myButton = document.getElementById('myBtn')
 
-// When the user scrolls down 20px from the top of the document, show the button
-function scrollFunctionBTT() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    myButton.style.display = 'block'
-  } else {
-    myButton.style.display = 'none'
-  }
-}
+// // When the user scrolls down 20px from the top of the document, show the button
+// function scrollFunctionBTT() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     myButton.style.display = 'block'
+//   } else {
+//     myButton.style.display = 'none'
+//   }
+// }
