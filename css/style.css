@@ -1833,7 +1833,7 @@ ul {
   background-size: 70% 100%;
   background-position: left top;
   position: absolute;
-  left: -134px;
+  /* left: -134px; */
   bottom: -69px;
 }
 
@@ -1871,7 +1871,7 @@ ul {
   /* line 18, E:/172 Etrain Education/172_Etrain_Education_html/sass/_learning.scss */
   .learning_part .learning_img {
     bottom: -43px;
-    left: -80px;
+    /* left: -80px; */
   }
 }
 
