@@ -53,14 +53,3 @@ $(document).ready(function () {
 $('.counter').counterUp({
   time: 2000,
 })
-
-// myButton = document.getElementById('myBtn')
-
-// // When the user scrolls down 20px from the top of the document, show the button
-// function scrollFunctionBTT() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     myButton.style.display = 'block'
-//   } else {
-//     myButton.style.display = 'none'
-//   }
-// }
