@@ -2581,7 +2581,7 @@ ul {
   }
   /* line 22, E:/172 Etrain Education/172_Etrain_Education_html/sass/_special_cource.scss */
   .special_cource .single_special_cource .special_img {
-    width: 25%;
+    width:100%;
   }
 }
 
@@ -2634,7 +2634,7 @@ ul {
 
 /* line 61, E:/172 Etrain Education/172_Etrain_Education_html/sass/_special_cource.scss */
 .special_cource .single_special_cource .special_cource_text h4 {
-  float: right;
+  /* float: left; */
   color: #4f8e35;
   font-weight: 600;
 }
