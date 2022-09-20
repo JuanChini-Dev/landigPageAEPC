@@ -78,7 +78,7 @@ function loadCourses(firstPagination, secondPagination) {
 
   if (!urlHost.includes('cource')) {
     let courseSplit = course.slice(0, 3)
-    console.log(courseSplit)
+    // console.log(courseSplit)
     let divIndexCourse = document.getElementById('indexCourses')
     for (const c in courseSplit) {
       html += `

@@ -3297,6 +3297,10 @@ ul {
   padding: 100px 0px 20px;
 }
 
+.footer-container{
+  align-items: center;
+}
+
 @media (max-width: 991px) {
   /* line 2, E:/172 Etrain Education/172_Etrain_Education_html/sass/_footer.scss */
   .footer-area {
@@ -3377,24 +3381,7 @@ ul {
 }
 
 /* line 54, E:/172 Etrain Education/172_Etrain_Education_html/sass/_footer.scss */
-.footer-area .single-footer-widget input {
-  height: 40px;
-  border: none;
-  width: 67% !important;
-  font-weight: 400;
-  padding-left: 20px;
-  border-radius: 0;
-  font-size: 13px;
-  color: #999999;
-  border: 0px solid transparent;
-  font-family: "Roboto", sans-serif;
-}
 
-/* line 65, E:/172 Etrain Education/172_Etrain_Education_html/sass/_footer.scss */
-.footer-area .single-footer-widget input:focus {
-  outline: none;
-  box-shadow: none;
-}
 
 /* line 70, E:/172 Etrain Education/172_Etrain_Education_html/sass/_footer.scss */
 .footer-area .single-footer-widget .click-btn {
