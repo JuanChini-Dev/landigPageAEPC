@@ -47,9 +47,9 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <h2 class="contact-title">Contactanos</h2>
-          </div>
+          <!-- <div class="col-12">
+            <h2 class="contact-title">Pedi Info !</h2>
+          </div> -->
           <div class="col-lg-8">
             <form
               class="form-contact contact_form"
@@ -63,8 +63,8 @@
                   <div class="form-group">
                     <input class="form-control" name="name" id="name"
                     type="text" onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Ingrese su nombre'"
-                    placeholder="Ingrese su nombre'"" />
+                    onblur="this.placeholder = 'Ingrese su nombre y apellido'"
+                    placeholder="Ingrese su nombre y apellido'"" />
                   </div>
                 </div>
                 <div class="col-sm-6">
@@ -82,6 +82,39 @@
                 </div>
                 <div class="col-12">
                   <div class="form-group">
+                    <select class="form-control" name="subject" id="subject">
+                      <option value="0" disabled selected>
+                        Estás interesado en recibir información sobre
+                      </option>
+                      <option value="1">
+                        Perito Clasificador de Cereales
+                      </option>
+                      <option value="2">
+                        Tecnicatura Superior en Calidad y Comercializacion de
+                        Granos
+                      </option>
+                      <option value="3">
+                        Jornada de Actualización de Peritos Clasificadores de
+                        Granos
+                      </option>
+                      <option value="4">
+                        Manejo Integrado de Plagas en Granos Almacenados.
+                      </option>
+                      <option value="5">Manejo Seguro de Agroquímicos</option>
+                      <option value="6">
+                        Manejo Eficiente de Granos en Poscosecha.
+                      </option>
+                      <option value="7">
+                        Manejo Eficiente de Mermas de Granos en Poscosecha
+                      </option>
+                      <option value="8">
+                        Diplomatura Superior en Poscosecha de Granos
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
                     <textarea
                       class="form-control"
                       name="message"
@@ -92,11 +125,11 @@
                     ></textarea>
                   </div>
                 </div>
-              </div>
-              <div class="form-group mt-3">
-                <button type="submit" class="button button-contactForm btn_1">
-                  Enviar Mensaje
-                </button>
+                <div class="form-group mt-3">
+                  <button type="submit" class="button button-contactForm btn_1">
+                    Enviar Mensaje
+                  </button>
+                </div>
               </div>
             </form>
           </div>
@@ -111,8 +144,7 @@
             <div class="media contact-info">
               <span class="contact-info__icon"><i class="ti-tablet"></i></span>
               <div class="media-body">
-                <h3>+54 9 4254466</h3>
-                <!-- <p>Mon to Fri 9am to 6pm</p> -->
+                <h3>+54 9 3518 74-9865</h3>
               </div>
             </div>
             <div class="media contact-info">

@@ -5334,6 +5334,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 53, E:/172 Etrain Education/172_Etrain_Education_html/sass/_contact.scss */
 .form-contact .form-group .btn_1 {
   margin-bottom: -30px;
+  margin-left: 15px;
 }
 
 /* line 58, E:/172 Etrain Education/172_Etrain_Education_html/sass/_contact.scss */
@@ -5358,10 +5359,21 @@ h1, h2, h3, h4, h5, h6 {
   color: #999999;
 }
 
+.form-contact select {
+  font-weight: 300;
+  color: #999999;
+}
+
+
+.form-contact option {
+  font-weight: 300;
+  color: #999999;
+}
+
 /* line 77, E:/172 Etrain Education/172_Etrain_Education_html/sass/_contact.scss */
 .form-contact textarea {
   border-radius: 12px;
-  height: 100% !important;
+  
 }
 
 @media (max-width: 576px) {
@@ -5981,7 +5993,7 @@ h1, h2, h3, h4, h5, h6 {
 .owl-carousel {
   display: flex;
   overflow: hidden;
-  max-width: 900px;
+  max-width: 1100px;
   margin: auto;
   
 }
@@ -5990,11 +6002,12 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   height: 10rem;
+
   
 }
 .owl-item img {
-  width: 75% !important;
-  height: 75% !important;
+  width: auto;
+  height: 100px !important;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
