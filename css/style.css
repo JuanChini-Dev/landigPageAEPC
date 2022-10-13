@@ -1035,7 +1035,8 @@ ul {
   height: 880px;
   position: relative;
   overflow: hidden;
-  background-image: url(../img/banner_bg.png);
+  /* background-image: url(../img/banner_bg.png);  */
+  
   background-repeat: no-repeat;
   background-size: 68%;
   background-position: top right;
@@ -1306,11 +1307,16 @@ ul {
 /* line 164, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
 .banner_part:after {
   position: absolute;
-  top: 15%;
+  top: 25%;
   width: 41%;
-  height: 69%;
+  height: 49%;
   content: "";
-  background-image: url(../img/Vectores-Web.png);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.898),
+    rgba(0,0,0, 000)
+  ),url(../img/Imagenes-04.png);
+  border-radius: 15px;
   background-size: 100% 100%;
   right: 9%;
 }
@@ -1595,6 +1601,7 @@ ul {
   /* line 36, E:/172 Etrain Education/172_Etrain_Education_html/sass/_feature_part.scss */
   .feature_part .single_feature_text .btn_1 {
     margin-top: 25px;
+    display: none;
   }
 }
 
@@ -1799,7 +1806,8 @@ ul {
 @media (max-width: 576px) {
   /* line 2, E:/172 Etrain Education/172_Etrain_Education_html/sass/_learning.scss */
   .learning_part {
-    padding: 70px 0px;
+    padding: 20px 0px;
+    margin-top:-10px
   }
 }
 
@@ -1843,7 +1851,9 @@ ul {
     position: inherit;
     left: 0;
     bottom: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    
+
   }
 }
 
@@ -1853,7 +1863,7 @@ ul {
     position: inherit;
     left: 0;
     bottom: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -1883,14 +1893,14 @@ ul {
 @media (max-width: 576px) {
   /* line 47, E:/172 Etrain Education/172_Etrain_Education_html/sass/_learning.scss */
   .learning_part .learning_img img {
-    padding: 0;
+  display: none;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* line 47, E:/172 Etrain Education/172_Etrain_Education_html/sass/_learning.scss */
   .learning_part .learning_img img {
-    padding: 0;
+   display: none;
   }
 }
 

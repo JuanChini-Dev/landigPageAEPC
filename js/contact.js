@@ -2,13 +2,9 @@ $(document).ready(function () {
   ;(function ($) {
     'use strict'
 
-    jQuery.validator.addMethod(
-      'answercheck',
-      function (value, element) {
-        return this.optional(element) || /^\bcat\b$/.test(value)
-      },
-      'type the correct answer -_-',
-    )
+    jQuery.validator.addMethod('answercheck', function (value, element) {
+      return this.optional(element) || /^\bcat\b$/.test(value)
+    })
 
     // validate contactForm form
     $(function () {
@@ -26,6 +22,10 @@ $(document).ready(function () {
             required: true,
             email: true,
           },
+          phone: {
+            required: true,
+            phone: true,
+          },
           message: {
             required: true,
             minlength: 20,
@@ -41,6 +41,9 @@ $(document).ready(function () {
           },
           email: {
             required: 'Por favor, ingrese su correo electronico.',
+          },
+          phone: {
+            required: 'Por favor, ingrese su numero de telefono.',
           },
           message: {
             required: 'Por favor, ingrese su consulta.',
