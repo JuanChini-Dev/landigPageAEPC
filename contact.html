@@ -50,18 +50,23 @@
           <div class="col-lg-8">
             <form
               class="form-contact contact_form"
-              action="contact_process.php"
               method="post"
               id="contactForm"
-              novalidate="novalidate"
             >
               <div class="row">
                 <div class="col-sm-5">
                   <div class="form-group">
-                    <input class="form-control" name="name" id="name"
-                    type="text" onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Ingrese su nombre y apellido'"
-                    placeholder="Ingrese su nombre y apellido'"" />
+                    <input
+                      class="form-control"
+                      name="name"
+                      type="text"
+                      pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Ingrese su nombre y apellido'"
+                      placeholder="Ingrese su nombre y apellido"
+                      title="Escriba su nombre completos"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="col-sm-7">
@@ -69,11 +74,13 @@
                     <input
                       class="form-control"
                       name="email"
-                      id="email"
                       type="email"
+                      pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
                       onfocus="this.placeholder = ''"
                       onblur="this.placeholder = 'Ingrese su correo'"
                       placeholder="Ingrese su correo"
+                      title="Escriba su correo"
+                      required
                     />
                   </div>
                 </div>
@@ -82,17 +89,18 @@
                     <input
                       class="form-control"
                       name="phone"
-                      id="phone"
                       type="phone"
                       onfocus="this.placeholder = ''"
                       onblur="this.placeholder = 'Ingrese su telefono'"
                       placeholder="Ingrese su telefono"
+                      title="Escriba su telefono"
+                      required
                     />
                   </div>
                 </div>
                 <div class="col-7">
                   <div class="form-group">
-                    <select class="form-control" name="subject" id="subject">
+                    <select class="form-control" name="subject" required>
                       <option value="0" disabled selected>
                         Estás interesado en recibir información sobre
                       </option>
@@ -129,8 +137,10 @@
                       class="form-control"
                       name="message"
                       placeholder="Escriba aqui su consulta"
+                      data-pattern="^.{1,255}$"
                       onfocus="this.placeholder = ''"
                       onblur="this.placeholder = 'Escriba aqui su consulta'"
+                      title="El contenido de su consulta no puede exceder los 255 caracteres"
                       required
                     ></textarea>
                   </div>
@@ -140,6 +150,12 @@
                     Enviar Mensaje
                   </button>
                 </div>
+              </div>
+              <div class="contact-form-loader d-none">
+                <img src="./assets/puff.svg" alt="" />
+              </div>
+              <div class="contact-form-response d-none">
+                <p>Los datos han sido enviados</p>
               </div>
             </form>
           </div>
@@ -194,7 +210,7 @@
     <script src="js/jquery.ajaxchimp.min.js"></script>
     <script src="js/jquery.form.js"></script>
     <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
+    <!-- <script src="js/mail-script.js"></script> -->
     <script src="js/contact.js"></script>
 
     <!-- slick js -->
@@ -203,5 +219,6 @@
     <script src="js/waypoints.min.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
+    <script src="js/mail.js"></script>
   </body>
 </html>

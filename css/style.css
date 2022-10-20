@@ -6026,4 +6026,27 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+/* contact-form */
+/* .form-contact  [required]:valid{
+  border: thin solid #4f8e35
+} */
+
+
+/* .form-contact [required]:invalid{
+  border: thin solid #ff663b
+} */
+
+.contact-form-error{
+  margin-top: -1rem;
+  font-size: 100%;
+  background-color: #ff663b;
+  color: #fff;
+  transition: all 800ms ease;
+}
+
+.contact-form-error.is-active{
+  display:bold;
+  animation: show-message 1s 1 normal 0s ease-in-out
+}
+
 
