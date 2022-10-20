@@ -52,7 +52,7 @@ document.addEventListener('submit', (e) => {
   const $loader = d.querySelector('.contact-form-loader')
   const $response = d.querySelector('.contact-form-response')
 
-  fetch('https://formsubmit.co/ajax/chini195@gmail.com', {
+  fetch('https://formsubmit.co/ajax/1814c8352ba17cd6d358fa7c99ec8f1d', {
     method: 'POST',
     body: JSON.stringify(data),
     headers: {
@@ -62,11 +62,10 @@ document.addEventListener('submit', (e) => {
   })
     .then((res) => (res.ok ? res.json() : Promise.reject(res)))
     .then((json) => {
-      //   console.log(json)
       $loader.classList.add('-dnone')
       $response.classList.remove('d-none')
       $response.innerHTML = `<p>${json.message}</p>`
-      //   $form.reset()
+      $form.reset()
     })
     .catch((err) => {
       console.error(err)
@@ -75,7 +74,11 @@ document.addEventListener('submit', (e) => {
     })
     .finally(() => {
       setTimeout(() => {
-        alert('Mensaje enviado')
+        Swal.fire(
+          'Mensaje Enviado!',
+          'En las proximas horas estaras recibiendo una respuesta a tu consulta',
+          'success',
+        )
         $response.classList.add('d-none')
       }, 2000)
     })
