@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Agro Escuela</title>
+    <link rel="icon" href="img/logoAepc.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/632fe2bf90.js"></script>
+    <script src="./js/include.js"></script>
+    <style>
+      .student_data h5,
+      .student_data p {
+        display: inline;
+      }
+      .student_data p {
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--::header part start::-->
+    <div data-include="./assets/login.html"></div>
+    <div data-include="./assets/navbar.html"></div>
+    <!-- Header part end-->
+
+    <!-- ================ login section start ================= -->
+
+    <section class="contact-section section_padding">
+      <div class="container mt-2 mb-3">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <div id="student_document" class="student_data">
+              <h5>Documento:</h5>
+            </div>
+            <div id="student_name" class="student_data">
+              <h5>Apellido y Nombre:</h5>
+            </div>
+          </div>
+          <div class="col-12 col-md-7">
+            <div id="student_course" class="student_data">
+              <h5>Curso/Carrera:</h5>
+              <p>Perito Clasificador de Cereales</p>
+            </div>
+            <div id="student_year" class="student_data">
+              <h5>Año:</h5>
+              <p>2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <table class="table table-hover" id="student_payments">
+          <thead>
+            <tr>
+              <th scope="col">Nro</th>
+              <th scope="col">Concepto</th>
+              <th scope="col">Vencimiento</th>
+              <th scope="col">Valor</th>
+              <th scope="col">Pago</th>
+              <th scope="col">Saldo</th>
+              <th scope="col">Acciones</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <template id="student_payments_template">
+          <tr>
+            <td class="order_id"></td>
+            <td class="order_description"></td>
+            <td class="order_date"></td>
+            <td class="order_value"></td>
+            <td class="payment_value"></td>
+            <td class="balance"></td>
+            <td>
+              <button type="button" class="btn btn-danger btn-sm payment_id">
+                <span>
+                  <i class="fas fa-cart-shopping"></i>
+                </span>
+              </button>
+
+              <button type="button" class="btn btn-success btn-sm print_id">
+                <span>
+                  <i class="fas fa-print"></i>
+                </span>
+              </button>
+            </td>
+          </tr>
+        </template>
+      </div>
+    </section>
+
+    <!-- ================ login section end ================= -->
+
+    <!-- footer part start-->
+    <div data-include="assets/footer.html"></div>
+    <!-- footer part end-->
+    <div data-include="./assets/whatapp.html"></div>
+
+    <!-- jquery plugins here-->
+    <!-- jquery -->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <!-- <script src="js/mail-script.js"></script> -->
+    <script src="js/contact.js"></script>
+    <script src="js/student_payments.js"></script>
+
+    <!-- slick js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="js/mail.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
+
+<!-- <tr>
+  <th scope="row">1</th>
+  <td>Inscripcion</td>
+  <td>01/03/2022</td>
+  <td>$7.500,00</td>
+  <td>$7.500,00</td>
+  <td>$0,00</td>
+  <td>
+    <button>
+      <i class="fas fa-file-pdf"></i>
+    </button>
+  </td>
+</tr>
+<tr>
+  <th scope="row">2</th>
+  <td>Marzo</td>
+  <td>01/03/2022</td>
+  <td>$7.500,00</td>
+  <td>$0,00</td>
+  <td>$7.500,00</td>
+  <td>
+    <button>
+      <i class="fas fa-money"></i>
+    </button>
+  </td>
+</tr>
+<tr>
+  <th scope="row">3</th>
+  <td>Abril</td>
+  <td>01/03/2022</td>
+  <td>$7.500,00</td>
+  <td>$0,00</td>
+  <td>$7.500,00</td>
+  <td>
+    <button>
+      <i class="fas fa-money"></i>
+    </button>
+  </td>
+</tr>
+<tr>
+  <th scope="row">4</th>
+  <td>Abril</td>
+  <td>01/04/2022</td>
+  <td>$7.500,00</td>
+  <td>$0,00</td>
+  <td>$7.500,00</td>
+  <td>
+    <button>
+      <i class="fas fa-money"></i>
+    </button>
+  </td>
+</tr>
+<tr>
+  <th scope="row">5</th>
+  <td>Mayo</td>
+  <td>01/05/2022</td>
+  <td>$7.500,00</td>
+  <td>$0,00</td>
+  <td>$7.500,00</td>
+  <td>
+    <button>
+      <i class="fas fa-money"></i>
+    </button>
+  </td>
+</tr>
+<tr>
+  <th scope="row">6</th>
+  <td>Junio</td>
+  <td>01/06/2022</td>
+  <td>$7.500,00</td>
+  <td>$0,00</td>
+  <td>$7.500,00</td>
+  <td>
+    <button>
+      <i class="fas fa-money"></i>
+    </button>
+  </td>
+</tr>
+<tr>
+  <th scope="row">7</th>
+  <td>Abril</td>
+  <td>01/03/2022</td>
+  <td>$7.500,00</td>
+  <td>$0,00</td>
+  <td>$7.500,00</td>
+  <td>
+    <button>
+      <i class="fas fa-money"></i>
+    </button>
+  </td>
+</tr>
+<tr>
+  <th scope="row">8</th>
+  <td>Abril</td>
+  <td>01/03/2022</td>
+  <td>$7.500,00</td>
+  <td>$0,00</td>
+  <td>$7.500,00</td>
+  <td>
+    <button>
+      <i class="fas fa-money"></i>
+    </button>
+  </td>
+</tr>
+<tr>
+  <th scope="row">9</th>
+  <td>Abril</td>
+  <td>01/03/2022</td>
+  <td>$7.500,00</td>
+  <td>$0,00</td>
+  <td>$7.500,00</td>
+  <td>
+    <button>
+      <i class="fas fa-money"></i>
+    </button>
+  </td>
+</tr>
+<tr>
+  <th scope="row">10</th>
+  <td>Abril</td>
+  <td>01/03/2022</td>
+  <td>$7.500,00</td>
+  <td>$0,00</td>
+  <td>$7.500,00</td>
+  <td>
+    <button>
+      <i class="fas fa-money"></i>
+    </button>
+  </td>
+</tr> -->
