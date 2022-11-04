@@ -712,7 +712,7 @@ ul {
 /**************menu part start*****************/
 /* line 2, E:/172 Etrain Education/172_Etrain_Education_html/sass/_menu.scss */
 .main_menu {
-  position: absolute;
+  position: static;
   left: 0;
   top: 0;
   width: 100%;
@@ -1037,45 +1037,114 @@ ul {
 /**************** banner part css start ****************/
 /* line 2, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
 .banner_part {
-  height: 880px;
-  position: relative;
-  background: url(../img/banner_bg.png) no-repeat center;
-  background-size: 68%; 
-  background-position: top right;
+  height: 600px;
+  position: static;
+  background: url(../img/background_original_1.jpeg) no-repeat center;
+  background-size: 100%; 
+  /* background-position: top right; */
   
 }
 
 @media (max-width: 576px) {
   /* line 2, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
   .banner_part {
-    height: 700px;
-    background-image: none;
+    height: 650px;
     background-color: #f7f7f7;
+    background-position: 0px 100px;
+    background-image: none;
   }
+
+  .banner_title{
+    background: url(../img/background_original_1.jpeg) no-repeat center;
+    background-size: 100%;
+    padding: 12%;
+    margin-top: -30%;
+    margin-left: -10%;
+    margin-right: -10%;   
+  }
+
+  .banner_text_p {
+    
+    text-align: center;
+    margin-left: -10%;
+    margin-right: -10%;  
+    padding: 15%;
+    background-color: #4f8e35;
+  }
+
+  .banner_button{
+    padding: 5%;
+  }
+ 
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* line 2, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
   .banner_part {
-    height: 750px;
-    background-image: none;
+    height: 650px;
     background-color: #f7f7f7;
+    background-position: 0px 100px;
+    background-image: none;
+  }
+
+  .banner_title{
+    background: url(../img/background_original_1.jpeg) no-repeat center;
+    background-size: 100%;
+    padding: 15% 15% 15% 15%;
+    margin-left: -25%;
+    margin-right: -25%;   
+  }
+
+  .banner_text_p {
+    
+    text-align: center;
+    margin-top:-10%;
+    margin-left: -25%;
+    margin-right: -25%;  
+    padding: 15%;
+    background-color: #4f8e35;
+  }
+
+  .banner_button{
+    padding: 5%;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 2, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
   .banner_part {
-    height: 750px;
-    background-image: none;
+    height: 600px;
     background-color: #f7f7f7;
   }
+
+  .banner_title{
+    
+    background-size: 100%;
+    /* padding: 15% 15% 15% 15%; */
+    /* margin-left: -25%; */
+    /* margin-right: -25%;    */
+  }
+
+  .banner_text_p {
+    
+    text-align: center;
+    /* margin-top:-10%;
+    margin-left: -25%;
+    margin-right: -25%;   */
+    /* padding: 15%; */
+    
+  }
+
+  .banner_button{
+    padding: 1%;
+  }
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   /* line 2, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
   .banner_part {
-    height: 650px;
+    height: 600px;
   }
 }
 
@@ -1083,7 +1152,7 @@ ul {
 .banner_part .banner_text {
   display: table;
   width: 100%;
-  height: 880px;
+  height: 600px;
 }
 
 /* line 34, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
@@ -1110,6 +1179,7 @@ ul {
   /* line 34, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
   .banner_part .banner_text .banner_text_iner {
     vertical-align: bottom;
+    
   }
 }
 
@@ -1124,9 +1194,13 @@ ul {
   /* line 30, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
   .banner_part .banner_text {
     text-align: center;
-    padding-top: 0px;
-    height: 700px;
-  }
+    padding-top: 150px;
+    height: 450px;
+    }
+    
+ 
+
+
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -1134,8 +1208,9 @@ ul {
   .banner_part .banner_text {
     text-align: center;
     padding-top: 0px;
-    height: 750px;
+    height: 500px;
   }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1143,14 +1218,14 @@ ul {
   .banner_part .banner_text {
     text-align: center;
     padding-top: 0px;
-    height: 750px;
+    height: 500px;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   /* line 30, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
   .banner_part .banner_text {
-    height: 650px;
+    height: 550px;
   }
 }
 
@@ -1159,7 +1234,8 @@ ul {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #556172;
+  /* color: #556172; */
+  color: white;
   margin-bottom: 14px;
 }
 
@@ -1170,6 +1246,8 @@ ul {
   font-weight: 700;
   margin-bottom: 27px;
   line-height: 1.18;
+  color: white;
+
 }
 
 @media (max-width: 576px) {
@@ -1218,7 +1296,9 @@ ul {
   font-size: 15px;
   line-height: 1.8;
   font-family: "Roboto", sans-serif;
-  color: #777777;
+  /* color: #777777; */
+  color: white
+
 }
 
 /* line 112, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
@@ -1264,157 +1344,9 @@ ul {
   }
 }
 
-/* line 138, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
-.banner_part .banner_text .btn_2 {
-  margin-top: 50px;
-  padding: 13px 46px;
-  margin-left: 10px;
-}
 
-@media (max-width: 576px) {
-  /* line 138, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
-  .banner_part .banner_text .btn_2 {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    padding: 10px 25px;
-  }
-}
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 138, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
-  .banner_part .banner_text .btn_2 {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    padding: 10px 25px;
-  }
-}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 138, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
-  .banner_part .banner_text .btn_2 {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    padding: 10px 25px;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* line 138, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
-  .banner_part .banner_text .btn_2 {
-    margin-top: 20px;
-    margin-bottom: 70px;
-    padding: 10px 25px;
-  }
-}
-
-/* line 164, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
-.banner_part:after {
-  position: absolute;
-  top: 163px;
-  width: 41%;
-  height: 69%;
-  content: "";
-  background-image: url(../img/Vectores-Web.png);
-  background-size: 100% 100%;
-  right: 9%;
-}
-
-@media (max-width: 432px) {
-  /* line 164, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
-  .banner_part:after {
-    position: absolute;
-    top: 80px;
-    max-width: 100%;
-    max-height: 100%;
-    content: "";
-    background-image: url(../img/Vectores-Web.png);
-    /* background-size: contain; */
-    right: 0;
-    left: 0;
-    text-align: center;
-    margin: 0 auto;
-    background-repeat: no-repeat;
-    height: 23%;
-  }
-
-}
-
-@media only screen and (min-width:433px) and (max-width: 576px) {
-  /* line 164, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
-  .banner_part:after {
-    position: absolute;
-    top: 120px;
-    max-width: 100%;
-    max-height: 100%;
-    content: "";
-    background-image: url(../img/Vectores-Web.png);
-    /* background-size: contain; */
-    right: 0;
-    left: 0;
-    text-align: center;
-    margin: 0 auto;
-    background-repeat: no-repeat;
-    height: 30%;
-
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 164, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
-  .banner_part:after {
-    position: absolute;
-    top: 100px;
-    max-width: 100%;
-    max-height: 100%;
-    content: "";
-    background-image: url(../img/Vectores-Web.png);
-    /* background-size: contain; */
-    right: 0;
-    left: 0;
-    text-align: center;
-    margin: 0 auto;
-    background-repeat: no-repeat;
-    height: 30%;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 164, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
-  .banner_part:after {
-    position: absolute;
-    top: 100px;
-    max-width: 100%;
-    max-height: 100%;
-    content: "";
-    background-image: url(../img/Vectores-Web.png);
-    /* background-size: contain; */
-    right: 0;
-    left: 0;
-    text-align: center;
-    margin: 0 auto;
-    background-repeat: no-repeat;
-    height: 40%;
-  }
- 
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* line 164, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
-  .banner_part:after {
-    position: absolute;
-    max-width: 100%;
-    max-height: 100%;
-    content: "";
-    background-image: url(../img/Vectores-Web.png);
-    /* background-size: contain; */
-    right: 5%;
-    bottom: 0;
-    top: 100px;
-    background-repeat: no-repeat;
-  }
-
- 
-}
 
 /* line 164, E:/172 Etrain Education/172_Etrain_Education_html/sass/_banner.scss */
 
