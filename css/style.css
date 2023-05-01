@@ -1794,15 +1794,20 @@ ul {
 
 /* line 18, E:/172 Etrain Education/172_Etrain_Education_html/sass/_learning.scss */
 .learning_part .learning_img {
-  background-image: url("../img/learning_img_bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("../img/learning_img_bg.png") center no-repeat;
+  
+  
   background-size: 70% 100%;
   background-position: left top;
   position: absolute;
   /* left: -134px; */
-  bottom: -69px;
+  bottom: -40px;
+}
+ 
+.img_learning{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 576px) {

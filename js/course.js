@@ -1,11 +1,4 @@
 let courses = [
-  // {
-  //   title: 'Perito Clasificador de Cereales',
-  //   url: './202305-perito.html',
-  //   date_init: '05/02/2023',
-  //   modality: 'Distancia',
-  //   date_string: 'Mayo 2023',
-  // },
   {
     title: 'Perito Clasificador de Cereales',
     url: './202303-perito.html',
